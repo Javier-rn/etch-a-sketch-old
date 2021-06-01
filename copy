@@ -1,0 +1,55 @@
+const container = document.querySelector('#container');
+
+for (let i = 0; i < 1034; i++) {
+    const newDiv = document.createElement('div');
+    newDiv.id = 'square';
+    newDiv.classList.toggle('divStyles');
+    container.appendChild(newDiv);
+}
+
+const allSquares = document.querySelectorAll('#square');
+
+allSquares.forEach(square => square.addEventListener('mouseover', function (e) {
+    square.style.backgroundColor = 'black';
+}))
+
+------
+
+body {
+    background-color: rgb(208, 235, 244);
+    margin: 0px;
+    text-align: center;
+   
+
+}
+
+button {
+    font-size: 22px;
+    width: 100px;
+    padding: 5px;
+    margin: 10px 5px;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+
+
+#container {
+    border: 3px solid black;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.divStyles {
+    
+    background-color: rgb(17, 96, 122);
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+}
+
+.colorChange {
+    background-color: 'black';
+}

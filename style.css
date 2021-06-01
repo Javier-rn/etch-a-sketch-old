@@ -1,0 +1,39 @@
+body {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons {
+    flex-direction: row;
+}
+
+button {
+    box-sizing: border-box;
+    padding: 7px 10px;
+    margin: 0 3px 15px;
+    border: 1px solid darkcyan;
+    border-radius: 3px;
+    font-size: 14px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+    transition: all 0.1s;
+}
+
+button:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.14) , 1px 2px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+#container {
+    
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+}
+
+.divStyles {
+    border: 0.05em solid lightgray;
+}
